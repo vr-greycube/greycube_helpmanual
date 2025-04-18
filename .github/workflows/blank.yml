@@ -15,7 +15,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: dabreadman/sync-upstream-repo@v1.3.0
+      - uses: actions/checkout@v2
+
+      
+      - name: sync fork
+        uses: dabreadman/sync-upstream-repo@v1.3.0
         with:
           upstream_repo: https://github.com/jigneshpshah/greycube_helpmanual
           upstream_branch: master 
