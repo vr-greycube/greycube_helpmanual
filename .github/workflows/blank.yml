@@ -21,7 +21,7 @@ jobs:
       - name: sync fork
         uses: dabreadman/sync-upstream-repo@v1.3.0
         with:
-          upstream_repo: https://github.com/jigneshpshah/greycube_helpmanual
+          upstream_repo: https://github.com/jigneshpshah/greycube_helpmanual.git
           upstream_branch: master 
           downstream_branch: master 
           token: ${{ secrets.GITHUB_TOKEN }}
